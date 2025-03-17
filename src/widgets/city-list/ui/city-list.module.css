@@ -1,0 +1,12 @@
+.cityList {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .cityList {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

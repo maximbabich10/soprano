@@ -1,0 +1,87 @@
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  width: 19.42%;
+  height: 250px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.data {
+  text-align: left;
+}
+
+.cityName {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.date {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.middle {
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temp {
+  font-size: 90px;
+}
+
+.weather p {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.closeButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.favoriteButton {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}

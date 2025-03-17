@@ -1,0 +1,18 @@
+.container {
+  gap: 24px;
+  padding: 60px 0px;
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
