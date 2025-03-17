@@ -6,7 +6,7 @@ export const getForecastWeather = createAsyncThunk<any, string>(
   async (city, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
-        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=ceeecf7ab911c0c6f47877bc4d97dbfa&lang=ru&units=metric`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${import.meta.env.VITE_WEATHER_API_KEY}&lang=ru&units=metric`
       );
 
       const now = new Date();
